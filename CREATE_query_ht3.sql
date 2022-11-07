@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS Artist_Album (
 CREATE TABLE IF NOT EXISTS Track (
 	id SERIAL PRIMARY KEY,
 	Track_name VARCHAR(60) UNIQUE NOT NULL,
-	Duration VARCHAR(60) NOT NULL,
+	Duration TIME NOT NULL,
 	AlbumID INTEGER references Album(id)
 );
 
